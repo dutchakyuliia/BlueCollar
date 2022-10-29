@@ -1,0 +1,94 @@
+:root{
+    --text-color-blue: #1C2752;
+    --text-color-white: #ffffff;
+    --accent-color-orange: #FFB342;
+ --primary-text-color: #7E7E7E;
+ --background-color-white: #ffffff;
+ --background-color-blue: #1C2752;
+}
+
+/*! Глобальні стилі */
+
+body {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.36px;
+    color: var(--primary-text-color);
+    background-color: var(--background-color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/*-----------------------HEADER-------------------------*/
+
+/*-----------------------MAIN---------------------------*/
+
+/*!------------HERO-------------*/
+
+/*!------------WELCOME-------------*/
+
+/*!------------OFFER-------------*/
+
+/*!------------OUR-SERVICES-------------*/
+
+/*!------------REASONS-------------*/
+
+/*!------------PROJECTS-------------*/
+
+/*!------------REVIEWS-APPOINTMENT-------------*/
+
+/*!------------CLIENTS-------------*/
+
+/*!------------PRICES-------------*/
+
+/*!------------ARTICLES-------------*/
+
+/*-------------------------FOOTER----------------------*/
