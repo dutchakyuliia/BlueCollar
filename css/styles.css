@@ -1,10 +1,12 @@
 :root {
   --text-color-blue: #1c2752;
   --text-color-white: #ffffff;
+  --title-text-color-blue: #1c2752;
   --accent-color-orange: #ffb342;
   --primary-text-color: #7e7e7e;
   --background-color-white: #ffffff;
   --background-color-blue: #1c2752;
+  --background-color-grey: #f4f4f4;
 }
 
 /*! Глобальні стилі */
@@ -33,8 +35,8 @@ img {
 }
 
 p {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 18px;
+    line-height: 1.5;
 }
 
 .container {
@@ -45,8 +47,8 @@ p {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .list {
@@ -70,62 +72,63 @@ p {
 /*-----------------------HEADER-------------------------*/
 
 .header-first {
-    display: flex;
-    align-items: center;
   background: #f2f2f2;
+}
+.first {
+  display: flex;
+  align-items: center;
 }
 
 .header-hours {
-    padding: 20px 0;
+  padding: 20px 0;
   font-size: 17px;
   line-height: 1.41;
-color: var(--text-color-blue)
+  color: var(--text-color-blue);
 }
 
 .header-soc {
-    display: flex;
-    margin-left: auto;
+  display: flex;
+  margin-left: auto;
 }
 
 .header-soc-item:not(:last-child) {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .header-second {
-    display: flex;
-    align-items: center;
   background-color: var(--background-color-white);
 }
-
+.second {
+  display: flex;
+  align-items: center;
+}
 .logo {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
 .header-contacts-list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 .header-contacts-item:not(:last-child) {
-margin-right: 65px;
+  margin-right: 65px;
 }
 .header-contacts-item {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .icon-box {
-    text-align: center;
-    width: 68px;
-    height: 68px;
-padding-top: 23px;
-padding-bottom:23px;
-margin-right:15px;
-background-color: var(--accent-color-orange);
-   border-radius: 100px;
-    }
+  text-align: center;
+  width: 68px;
+  height: 68px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  margin-right: 15px;
+  background-color: var(--accent-color-orange);
+  border-radius: 100px;
+}
 .icon-header {
-  
-        
 }
 
 .header-contacts {
@@ -144,37 +147,37 @@ background-color: var(--accent-color-orange);
 }
 
 .header-third {
-    display: flex;
-    align-items: center;
   background-color: var(--accent-color-orange);
 }
-
-.nav {  display: flex;
-    align-items: center;  
+.third {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
 }
 
-.nav-list { display: flex; 
-  
-  
+.nav-list {
+  display: flex;
 }
 
-.nav-item:first-child { margin-right: 49px;
-    margin-left: 45px;
-
+.nav-item:first-child {
+  margin-right: 49px;
+  margin-left: 45px;
 }
-.nav-item:nth-child(2) {margin-right: 55px;
-
+.nav-item:nth-child(2) {
+  margin-right: 55px;
 }
 .nav-item:nth-child(3) {
-    margin-right: 75px;
-
+  margin-right: 75px;
 }
 .nav-item:nth-child(4) {
-    margin-right: 51px;
+  margin-right: 51px;
 }
 .nav-link {
-    display: block;
-    padding: 29px 0;
+  display: block;
+  padding: 29px 0;
   font-size: 19px;
   line-height: 1.58;
   color: #222222;
@@ -209,9 +212,147 @@ background-color: var(--accent-color-orange);
 /*-----------------------MAIN---------------------------*/
 
 /*!------------HERO-------------*/
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--background-color-blue);
+  background-image: url(../images/hero.jpg);
+}
+.hero-wrap {
+  padding-top: 270px;
+  padding-bottom: 230px;
+}
+.uptitle-wrap {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0px;
+  width: 662px;
+  margin-bottom: 31px;
+  padding-left: 20px;
+}
+.hero-icon {
+  fill: var(--accent-color-orange);
+  margin-right: 10px;
+}
+.hero-uptitle {
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: var(--text-color-white);
+}
 
+.hero-title {
+  width: 712px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.3;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  color: var(--text-color-white);
+  margin-bottom: 29px;
+}
+
+.hero-btn {
+  display: block;
+  width: 227px;
+  height: 68px;
+  padding: 19px 42px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--text-color-blue);
+  text-decoration: none;
+  background-color: var(--accent-color-orange);
+}
 /*!------------WELCOME-------------*/
+.container.welcome {
+  display: flex;
+}
+.welcome-wrap {
+  margin-left: 50px;
+}
 
+.welcome-icon-box {
+  width: 245px ;
+  display: flex;
+  margin-bottom: 22px;
+  background-color: var(--background-color-grey);
+}
+
+.welcome-icon {
+  margin-left: 20px;
+  margin-right: 10px;
+  fill: var(--accent-color-orange);
+}
+
+.uptitle {
+  color: var(--text-color-blue);
+font-size: 18px;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.welcome-title {
+  font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.3;
+    color: var(--title-text-color-blue);
+    margin-bottom: 12px;
+
+}
+.wel-text-first {
+  margin-bottom: 10px;
+}
+.text {
+  font-size: 18px;
+    line-height: 1.59;
+}
+.welcome-list-wrap {
+  display: flex;
+}
+.wel-text-second {
+  margin-bottom: 18px;
+}
+.welcome-number-wrap {
+  padding: 30px 48px;
+  margin-right: 40px;
+  background-color: var(--background-color-grey);
+
+}
+.welcome-number {display:block;
+  font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.1;
+        text-align: center;
+    letter-spacing: 0.36px;
+    color: var(--accent-color-orange);
+    margin-bottom: 16px;
+}
+
+.welcom-number-text {
+  width: 112px ;
+  font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--title-text-color-blue);
+}
+
+.welcom-list-item {font-size: 17px;
+    line-height: 1.59;
+    color: var(--primary-text-color);
+}
+.welcom-list-item:first-child {
+  padding-top: 20px;
+}
+.welcom-list-item:not(:last-child){
+  margin-bottom: 10px;
+}
 /*!------------OFFER-------------*/
 
 /*!------------OUR-SERVICES-------------*/
