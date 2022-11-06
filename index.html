@@ -61,8 +61,8 @@
             <img
               src="./images/logo-dark.svg"
               alt="logo"
-              width="242px"
-              height="48px"
+              width="242"
+              height="48"
           /></a>
           <ul class="header-contacts-list list">
             <li class="header-contacts-item">
@@ -134,8 +134,8 @@
           <img
             src="./images/provide-future.jpg"
             alt="A worker who does his work"
-            width="575px"
-            height="581px"
+            width="575"
+            height="581"
           />
           <div class="welcome-wrap">
             <div class="welcome-icon-box">
@@ -226,8 +226,8 @@
               <img
                 src="./images/commercial-work.jpg"
                 alt="A worker"
-                width="416px"
-                height="366px"
+                width="416"
+                height="366"
               />
             </div>
           </article>
@@ -380,8 +380,8 @@
                 <img
                   src="./images/project-1.jpg"
                   alt="Fiber cable change"
-                  width="278px"
-                  height="334px"
+                  width="278"
+                  height="334"
                 />
                 <h3 class="projet-title">Fiber cable change</h3>
                 <p class="project-text text">Commercial</p>
@@ -392,8 +392,8 @@
                 <img
                   src="./images/project-2.jpg"
                   alt="Machine issue"
-                  width="278px"
-                  height="334px"
+                  width="278"
+                  height="334"
                 />
                 <h3 class="projet-title">Machine issue</h3>
                 <p class="project-text text">Industry</p>
@@ -404,8 +404,8 @@
                 <img
                   src="./images/project-3.jpg"
                   alt="Wheel Alloy Change"
-                  width="278px"
-                  height="334px"
+                  width="278"
+                  height="334"
                 />
                 <h3 class="projet-title">Wheel Alloy Change</h3>
                 <p class="project-text text">Residential</p>
@@ -416,8 +416,8 @@
                 <img
                   src="./images/project-4.jpg"
                   alt="Roof Cleaning"
-                  width="278px"
-                  height="334px"
+                  width="278"
+                  height="334"
                 />
                 <h3 class="projet-title">Roof Cleaning</h3>
                 <p class="project-text text">Commercial</p>
@@ -427,60 +427,107 @@
         </div>
       </section>
       <section class="reviews-appointment section">
-        <div class="container">
+        <div class="container rev-app-container">
           <h2 class="hidden">Reviews</h2>
           <div class="customers-question-wrap">
             <div class="customer-wrap">
-              <p>Testimonial</p>
-              <h3>Customers Says</h3>
-              <div class="customer-top">
-                <img src="./images/nancy-luther.jpg" alt="" />
-                <h4>Nancy luther</h4>
-                <p>NewYork</p>
-                <div class="nancy-icon-box">
-                  <svg class="nancy-icon" width="22" height="27">
-                    <use href="./images/sprite.svg#icon-list"></use>
+              <div class="customers-icon-box">
+                <svg class="customers-icon" width="22" height="27">
+                  <use href="./images/sprite.svg#icon-list"></use>
+                </svg>
+                <p class="customer-uptitle uptitle">Testimonial</p>
+              </div>
+              <h3 class="customers-title title">Customers Says</h3>
+              <div class="customer-headline">
+                <div class="customer-info-wrap">
+                  <img
+                    src="./images/nancy-luther.jpg"
+                    alt="Customer Nancy Luther"
+                  />
+                  <div class="customer-info">
+                    <h4 class="customer-title">Nancy luther</h4>
+                    <p class="customer-city">NewYork</p>
+                  </div>
+                </div>
+                <div class="customer-icon-box">
+                  <svg class="customer-icon" width="22" height="27">
+                    <use href="./images/sprite.svg#icon-dots"></use>
                   </svg>
                 </div>
               </div>
-              <p class="custoner-review">
-                We have had several good experiences with Blue Collar team. Most
-                recently, they replaced our 20-year-old HVAC system with a new,
-                modern, and more efficient system & it worked fine.
-              </p>
-              <div class="nev-revievs">
-                <button type="button">
-                  <svg class="reviews-icon" width="50" height="50">
-                    <use href=""></use>
-                  </svg>
-                </button>
-              </div>
-              <div>
-                <p>Any Question</p>
-                <p>99.9% Customer Satisfaction Based</p>
-                <p>
-                  If you have any questions or need help contact with our team,
-                  or call
+              <div class="nav-reviews">
+                <p class="custoner-review text">
+                  We have had several good experiences with
+                  <span class="custoner-text">Blue Collar</span> team. Most
+                  recently, they replaced our 20-year-old HVAC system with a
+                  new,
+                  <span class="custoner-text">modern, and more efficient</span>
+                  system & it worked fine.
                 </p>
-                <a href="tel:+0031234567890">(003) 123 456 7890</a>
+                <div class="reviews-btn">
+                  <button class="nav-reviews-btn first" type="button">
+                    <svg class="reviews-icon" width="9" height="15">
+                      <use href="./images/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                  </button>
+                  <button class="nav-reviews-btn" type="button">
+                    <svg class="reviews-icon" width="9" height="15">
+                      <use href="./images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-icon-box">
+                <svg class="question-icon" width="22" height="27">
+                  <use href="./images/sprite.svg#icon-list"></use>
+                </svg>
+                <p class="question-uptitle uptitle">Any Question</p>
+              </div>
+
+              <p class="question-text-title title">
+                99.9% Customer Satisfaction Based
+              </p>
+              <p class="question-text">
+                If you have any questions or need help contact with our team, or
+                call
+              </p>
+              <div class="question-tel-wrap">
+                <a class="question-tel-icon" href="tel:+0031234567890">
+                  <svg class="question-icon-tel" width="26" height="26">
+                    <use href="./images/sprite.svg#icon-tel"></use>
+                  </svg>
+                </a>
+                <a class="question-tel" href="tel:+0031234567890">
+                  (003) 123 456 7890</a
+                >
               </div>
             </div>
           </div>
           <div>
-            <p>Meet Us</p>
-            <h2>Appointment Form</h2>
+            <p class="appointment-uptitle uptitle">Meet Us</p>
+            <h2 class="appointment-title title">Appointment Form</h2>
           </div>
         </div>
       </section>
       <section class="clients section">
         <div class="container">
-          <p>Clients</p>
-          <h2>Our Trusted Big Clients!</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <p class="client-uptitle uptitle">Clients</p>
+          <h2 class="client-title title">Our Trusted Big Clients!</h2>
+          <ul class="client-list list">
+            <li class="client-item">
+              <a class="client-link" href=""></a>
+            </li>
+            <li class="client-item">
+              <a class="client-link" href=""></a>
+            </li>
+            <li class="client-item">
+              <a class="client-link" href=""></a>
+            </li>
+            <li class="client-item">
+              <a class="client-link" href=""></a>
+            </li>
           </ul>
         </div>
       </section>
@@ -615,15 +662,15 @@
         <address>
           <ul>
             <li>
-              <h2>Mail Us</h2>
+              <p>Mail Us</p>
               <a href="mailto:Info@bluecollar.com">Info@bluecollar.com</a>
             </li>
             <li>
-              <h2>Call Us</h2>
+              <p>Call Us</p>
               <a href="tel:+01569896654">+01 569 896 654</a>
             </li>
             <li>
-              <h2>Location</h2>
+              <p>Location</p>
               <a href="https://goo.gl/maps/X5bEeMizmiKGXKdW8"
                 >Amsterdam, 109-74</a
               >
