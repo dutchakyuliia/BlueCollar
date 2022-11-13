@@ -130,7 +130,20 @@ p {
   display: flex;
   align-items: center;
 }
-.header-contact-link {
+
+.header-contact-wrap {
+  display: flex;
+  text-decoration: none;
+}
+
+.header-contact-wrap:hover .header-contacts-text, .header-contact-wrap:focus .header-contacts-text {
+color: var(--accent-color-orange);
+}
+.header-contact-wrap:hover .header-contact-icon-wrap,
+.header-contact-wrap:focus .header-contact-icon-wrap {
+  color: #ffffff;
+}
+.header-contact-icon-wrap {
   display: block;
   text-align: center;
   width: 68px;
@@ -142,28 +155,27 @@ p {
   border-radius: 100px;
   color: transparent;
 }
-.header-contact-link:focus,
-.header-contact-link:hover {
+/* .header-contact-icon-wrap:focus,
+.header-contact-icon-wrap:hover {
   color: var(--text-color-white);
   transition: color 250ms var(--timing-function);
-}
+} */
 .icon-header {
   fill: currentColor;
 }
 
-.header-contacts {
+.header-contacts-title {
   font-family: "Mulish", sans-serif;
   font-size: 20px;
   line-height: 1.3;
   color: var(--text-color-blue);
 }
-
-.header-contacts-link {
-  font-size: 17px;
+.header-contacts-text {
+font-size: 17px;
   line-height: 1.59;
   letter-spacing: 0.36px;
   color: var(--primary-text-color);
-  text-decoration: none;
+  
 }
 
 .header-third {
@@ -1176,6 +1188,17 @@ p {
 .question-tel-wrap {
   display: flex;
 }
+.question-tel-link {
+  display: flex;
+  text-decoration: none;
+}
+.question-tel-link:hover .question-tel-icon , .question-tel-link:focus .question-tel-icon{
+  color: var(--background-color-blue);
+}
+.question-tel-link:hover .question-tel,
+.question-tel-link:focus .question-tel {
+  color: var(--background-color-blue);
+}
 .question-tel-icon {
   display: block;
   width: 50px;
@@ -1191,8 +1214,7 @@ p {
   margin: 0 auto;
   color: transparent;
 }
-.question-tel {
-}
+
 .question-tel-icon {
   display: block;
   text-align: center;
@@ -1206,12 +1228,6 @@ p {
   color: transparent;
 }
 
-.question-tel-icon:focus,
-.question-tel-icon:hover {
-  color: var(--background-color-blue);
-  transition: color 250ms var(--timing-function);
-}
-
 .question-icon {
   fill: currentColor;
 }
@@ -1222,7 +1238,6 @@ p {
   font-size: 30px;
   line-height: 1.5;
   color: var(--text-color-white);
-  text-decoration: none;
 }
 /*!------------APPOINTMENT-------------*/
 .appointment-wrap {
@@ -1709,7 +1724,7 @@ p {
   right: 50px;
   display: flex;
     content: "";
-    width: 1px;
+    width: 2px;
     height: 230px;
     background-color: #4B557D;
 }
@@ -1776,4 +1791,5 @@ p {
   font-size: 18px;
   line-height: 1.5;
   color: var(--text-color-white);
+  cursor: pointer;
 }
