@@ -98,11 +98,11 @@ p {
   display: block;
   padding: 25px 0;
   color: var(--text-color-blue);
+  transition: color 250ms var(--timing-function);
 }
 .soc-link:hover,
 .soc-link:focus {
   color: var(--accent-color-orange);
-  transition: color 250ms var(--timing-function);
 }
 .icon-soc {
   fill: currentColor;
@@ -134,10 +134,12 @@ p {
 .header-contact-wrap {
   display: flex;
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 }
 
-.header-contact-wrap:hover .header-contacts-text, .header-contact-wrap:focus .header-contacts-text {
-color: var(--accent-color-orange);
+.header-contact-wrap:hover .header-contacts-text,
+.header-contact-wrap:focus .header-contacts-text {
+  color: var(--accent-color-orange);
 }
 .header-contact-wrap:hover .header-contact-icon-wrap,
 .header-contact-wrap:focus .header-contact-icon-wrap {
@@ -155,11 +157,7 @@ color: var(--accent-color-orange);
   border-radius: 100px;
   color: transparent;
 }
-/* .header-contact-icon-wrap:focus,
-.header-contact-icon-wrap:hover {
-  color: var(--text-color-white);
-  transition: color 250ms var(--timing-function);
-} */
+
 .icon-header {
   fill: currentColor;
 }
@@ -171,11 +169,10 @@ color: var(--accent-color-orange);
   color: var(--text-color-blue);
 }
 .header-contacts-text {
-font-size: 17px;
+  font-size: 17px;
   line-height: 1.59;
   letter-spacing: 0.36px;
   color: var(--primary-text-color);
-  
 }
 
 .header-third {
@@ -214,11 +211,11 @@ font-size: 17px;
   line-height: 1.58;
   color: #222222;
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 }
 .nav-link:focus,
 .nav-link:hover {
   color: var(--text-color-white);
-  transition: color 250ms var(--timing-function);
 }
 
 .header-btn {
@@ -241,11 +238,11 @@ font-size: 17px;
   border: 2px solid var(--background-color-blue);
   border-radius: 0px;
   cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
 }
 .header-btn:hover,
 .header-btn:focus {
   background-color: #041045;
-  transition: background-color 250ms var(--timing-function);
 }
 
 /* modal form */
@@ -295,12 +292,12 @@ font-size: 17px;
   cursor: pointer;
   background-color: var(--background-color-white);
   color: var(--text-color-blue);
+  transition: color 250ms var(--timing-function);
 }
 
 .close-modal:focus,
 .close-modal:hover {
   color: var(--accent-color-orange);
-  transition: color 250ms var(--timing-function);
 }
 
 .icon-modal {
@@ -360,13 +357,13 @@ font-size: 17px;
   padding: 11px 42px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: outline 250ms var(--timing-function);
 }
 
 .form-field:focus-within input {
   outline: 1px solid var(--accent-color-orange);
   border-radius: 4px;
   border: none;
-  transition: outline 250ms var(--timing-function);
 }
 
 .form-field {
@@ -381,11 +378,11 @@ font-size: 17px;
   margin-top: 11px;
   margin-bottom: 11px;
   fill: currentColor;
+  transition: fill 250ms var(--timing-function);
 }
 
 .form-field:focus-within .icon-modal-field {
   fill: var(--accent-color-orange);
-  transition: fill 250ms var(--timing-function);
 }
 
 .form-field.textarea {
@@ -433,12 +430,12 @@ font-size: 17px;
   padding: 10px 52px;
   margin: 0 auto;
   cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .modal-submit:hover,
 .modal-submit:focus {
   background-color: #d4922f;
-  transition: background-color 250ms var(--timing-function);
 }
 
 /*-----------------------MAIN---------------------------*/
@@ -497,12 +494,13 @@ font-size: 17px;
   color: var(--text-color-blue);
   text-decoration: none;
   background-color: var(--accent-color-orange);
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #d28209;
   color: var(--text-color-white);
-  transition: color 250ms var(--timing-function);
 }
 /*!------------WELCOME-------------*/
 
@@ -662,6 +660,7 @@ font-size: 17px;
   color: #222222;
   border: 1px solid #1c2752;
   border-radius: 0px;
+  transition: background-color 250ms var(--timing-function);
 }
 .offer-link-first:focus,
 .offer-link-second:focus,
@@ -671,7 +670,6 @@ font-size: 17px;
 .offer-link-third:hover {
   background-color: var(--background-color-white);
   border: 1px solid #ffffff;
-  transition: background-color 250ms var(--timing-function);
 }
 .offer-link-first::before {
   content: "";
@@ -755,13 +753,13 @@ font-size: 17px;
   line-height: 30px;
   text-decoration: none;
   background-color: var(--accent-color-orange);
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .offer-btn:focus,
 .offer-btn:hover {
   background-color: #d28209;
   color: var(--text-color-white);
-  transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
 }
 .offer-img {
   padding: 81px 60px 81px 0;
@@ -1191,8 +1189,10 @@ font-size: 17px;
 .question-tel-link {
   display: flex;
   text-decoration: none;
+  transition: color 250ms var(--timing-function);
 }
-.question-tel-link:hover .question-tel-icon , .question-tel-link:focus .question-tel-icon{
+.question-tel-link:hover .question-tel-icon,
+.question-tel-link:focus .question-tel-icon {
   color: var(--background-color-blue);
 }
 .question-tel-link:hover .question-tel,
@@ -1428,13 +1428,13 @@ font-size: 17px;
   background-color: var(--accent-color-orange);
   color: var(--text-color-blue);
   border: none;
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 .buy-btn:hover,
 .buy-btn:focus {
   background-color: #d28209;
   color: var(--text-color-white);
-  transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
 }
 .prices-bottom {
   display: flex;
@@ -1595,6 +1595,7 @@ font-size: 17px;
   background-color: transparent;
   border: 2px solid #ffffff;
   color: var(--text-color-blue);
+  transition: outline 250ms var(--timing-function);
 }
 .subscribe-input::placeholder {
   color: var(--text-color-white);
@@ -1606,7 +1607,6 @@ font-size: 17px;
 .subscribe-input:focus-within {
   outline: 2px solid #ffffff;
   border: none;
-  transition: outline 250ms var(--timing-function);
 }
 .subscribe-btn {
   display: block;
@@ -1615,15 +1615,15 @@ font-size: 17px;
   border: 2px solid #ffffff;
   background-color: var(--background-color-white);
   cursor: pointer;
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
 }
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   background-color: var(--text-color-blue);
   color: var(--text-color-white);
   border: var(--text-color-blue);
-  transition: color 250ms var(--timing-function),
-    background-color 250ms var(--timing-function),
-    border 250ms var(--timing-function);
 }
 /*-------------------------FOOTER----------------------*/
 .footer {
@@ -1643,11 +1643,11 @@ font-size: 17px;
 .footer-up-wrap::after {
   position: absolute;
   bottom: -50px;
-      display: block;
-      content: "";
-      width: 100%;
-      height: 2px;
-      background-color: #4B557D;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #4b557d;
 }
 .footer-logo {
   margin-right: 62px;
@@ -1660,7 +1660,21 @@ font-size: 17px;
 .contact-list {
   display: flex;
 }
-.footer-contact-link {
+.footer-contact-link-wrap {
+  display: flex;
+  text-decoration: none;
+  transition: color 250ms var(--timing-function);
+}
+
+.footer-contact-link-wrap:hover .contact-link,
+.footer-contact-link-wrap:focus .contact-link {
+  color: var(--accent-color-orange);
+}
+.footer-contact-link-wrap:hover .footer-icon-wrap,
+.footer-contact-link-wrap:focus .footer-icon-wrap {
+  color: var(--background-color-white);
+}
+.footer-icon-wrap {
   display: block;
   text-align: center;
   width: 68px;
@@ -1671,12 +1685,6 @@ font-size: 17px;
   border-radius: 100px;
   color: transparent;
   margin-right: 15px;
-}
-
-.footer-contact-link:focus,
-.footer-contact-link:hover {
-  color: var(--text-color-white);
-  transition: color 250ms var(--timing-function);
 }
 
 .icon-footer {
@@ -1706,27 +1714,28 @@ font-size: 17px;
   position: relative;
   display: flex;
 }
-.footer-bottom::after{
+.footer-bottom::after {
   position: absolute;
-    bottom: -25px;
-    display: block;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #4B557D;
+  bottom: -25px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #4b557d;
 }
-.footer-left { position: relative;
+.footer-left {
+  position: relative;
   padding-top: 50px;
 }
-.footer-left::after{
+.footer-left::after {
   position: absolute;
-  top:100px;
+  top: 100px;
   right: 50px;
   display: flex;
-    content: "";
-    width: 2px;
-    height: 230px;
-    background-color: #4B557D;
+  content: "";
+  width: 2px;
+  height: 230px;
+  background-color: #4b557d;
 }
 .footer-text {
   font-size: 18px;
@@ -1750,11 +1759,11 @@ font-size: 17px;
   border-radius: 100px;
   color: var(--text-color-white);
   padding: 21px 0;
+  transition: background-color 250ms var(--timing-function);
 }
 .contact-link-footer:hover,
 .contact-link-footer:focus {
   background-color: var(--accent-color-orange);
-  transition: background-color 250ms var(--timing-function);
 }
 .footer-item:not(:last-child) {
   margin-right: 15px;
